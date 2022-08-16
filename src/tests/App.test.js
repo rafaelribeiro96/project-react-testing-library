@@ -15,6 +15,7 @@ describe('Testa o componente APP', () => {
     const linkAbout = screen.getByRole('link', { name: /about/i });
     expect(linkAbout).toBeInTheDocument();
   });
+
   test('É exibido na tela um link com o texto Favorite Pokémons', () => {
     renderWithRouter(<App />);
     const linkFavorite = screen.getByRole('link', { name: /favorite/i });
